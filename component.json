@@ -4,6 +4,7 @@
   "dependencies": {
     "requirejs": "~2.1.5",
     "elusive-iconfont": "latest",
-    "normalize-css": "~2.1.0"
+    "normalize-css": "~2.1.0",
+    "Redacted-Font": "git://github.com/christiannaths/Redacted-Font.git"
   }
 }

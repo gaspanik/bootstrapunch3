@@ -86,8 +86,6 @@ bootstrap-css: bootstrap/css/*.css
 bootstrap/css/*.css: less/*.less
 	recess --compile ${BOOTSTRAP_LESS} > ../templates/css/bootstrap.css
 	recess --compress ${BOOTSTRAP_LESS} > ../templates/css/bootstrap.min.css
-	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ../templates/css/bootstrap-responsive.css
-	recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > ../templates/css/bootstrap-responsive.min.css
 
 #
 # FONTS

@@ -5857,6 +5857,21 @@ a.list-group-item.active > .badge,
   position: fixed;
 }
 
+@font-face {
+  font-family: 'redacted_scriptregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/redacted-script-regular.eot');
+  src: url('../font/redacted-script-regular.eot?#iefix') format('embedded-opentype'), url('../font/redacted-script-regular.woff') format('woff'), url('../font/redacted-script-regular.ttf') format('truetype'), url('../font/redacted-script-regular.svg#redacted_scriptregular') format('svg');
+}
+
+.dummy {
+  font-family: 'redacted_scriptregular';
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+}
+
 @-ms-viewport {
   width: device-width;
 }
