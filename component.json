@@ -1,10 +1,11 @@
 {
   "name": "bootstrapunch",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "requirejs": "~2.1.5",
     "elusive-iconfont": "latest",
     "normalize-css": "~2.1.0",
-    "Redacted-Font": "git://github.com/christiannaths/Redacted-Font.git"
+    "Redacted-Font": "git://github.com/christiannaths/Redacted-Font.git",
+    "Hook.js": "git://github.com/jordansinger/Hook.js.git"
   }
 }
