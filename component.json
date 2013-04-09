@@ -1,0 +1,9 @@
+{
+  "name": "bootstrapunch",
+  "version": "0.2.0",
+  "dependencies": {
+    "requirejs": "~2.1.5",
+    "elusive-iconfont": "latest",
+    "normalize-css": "~2.1.0"
+  }
+}
