@@ -10,17 +10,9 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<style>#hook{margin-top:-85px}</style>
 	{{#stylesheet_bundle}}/css/all.css{{/stylesheet_bundle}}
-	<!--[if lt IE 9]><script src="/js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
-<div id="hook">
-	<div id="loader">
-		<div class="spinner"></div>
-	</div>
-	<span id="hook-text">Reloading...</span>
-</div>
 <!-- Navbar
 	================================================== -->
 	<div class="container">
@@ -33,12 +25,12 @@
 				</button>
 				<a class="navbar-brand" href="/">{{{site-title}}}</a>
 				<div class="nav-collapse collapse">
-					<ul class="nav">
+					<ul class="nav  navbar-nav">
 						{{#navbar}}
 						<li><a href="{{{href}}}">{{label}}</a></li>
 						{{/navbar}}
 						</ul>
-						<ul class="nav pull-right">
+						<ul class="nav navbar-nav pull-right">
 							<li><a href="#">Link</a></li>
 							<li class="divider-vertical"></li>
 							<li class="dropdown">

@@ -9,8 +9,7 @@
 
 	"bundles": {
 		"/css/all.css": [
-			"/css/hook.css",
-			"/css/bootstrap.min.css"
+			"/css/bootstrap.css"
 		]
 	},
 	

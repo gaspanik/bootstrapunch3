@@ -22,12 +22,12 @@ build:
 	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@echo "               ${CHECK}"
 	@printf "Prepping documentation assets..."
-	@cp font/* ../templates/font/
+	@cp fonts/* ../templates/font/
 	@cp js/*.js ../templates/js/
 	@cp js/tests/vendor/jquery.js ../templates/js/
 	@echo "            ${CHECK}"
 	@printf "Compiling and minifying JavaScript..."
-	@cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ../templates/js/bootstrap.js
+	@cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-affix.js > ../templates/js/bootstrap.js
 	@uglifyjs -nc ../templates/js/bootstrap.js > ../templates/js/bootstrap.min.tmp.js
 	@echo "/**\n* Bootstrap.js v3.0.0 by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > ../templates/js/copyright.js
 	@cat ../templates/js/copyright.js ../templates/js/bootstrap.min.tmp.js > ../templates/js/bootstrap.min.js
@@ -71,7 +71,7 @@ bootstrap: bootstrap-font bootstrap-css bootstrap-js
 bootstrap-js: bootstrap/js/*.js
 
 bootstrap/js/*.js: js/*.js
-	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ../templates/js/bootstrap.js
+	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-affix.js > ../templates/js/bootstrap.js
 	uglifyjs -nc ../templates/js/bootstrap.js > ../templates/js/bootstrap.min.tmp.js
 	echo "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > ../templates/js/copyright.js
 	cat ../templates/js/copyright.js ../templates/js/bootstrap.min.tmp.js > ../templates/js/bootstrap.min.js
@@ -93,8 +93,8 @@ bootstrap/css/*.css: less/*.less
 
 bootstrap-font: ../templates/font/*
 
-../templates//font/*: font/*
-	cp font/* ../templates/font/
+../templates//font/*: fonts/*
+	cp fonts/* ../templates/font/
 
 #
 # WATCH LESS FILES
